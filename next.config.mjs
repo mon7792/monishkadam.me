@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath: "/monishkadam.me",
   reactStrictMode: true,
   distDir: "docs",
   output: "export",
@@ -7,9 +8,5 @@ const nextConfig = {
     unoptimized: true,
   },
 };
-
-if (process.env.NODE_ENV === "production") {
-  nextConfig.basePath = "/monishkadam.me";
-}
 
 export default nextConfig;
