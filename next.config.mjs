@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/monishkadam.me",
+  basePath: "/monishkadam.me",    
   assetPrefix: "/monishkadam.me/",
   reactStrictMode: true,
   distDir: "dist",
