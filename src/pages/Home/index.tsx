@@ -3,6 +3,8 @@ import Link from "next/link";
 
 import { Bowlby_One, Roboto } from "next/font/google";
 
+import { CardsChat } from "@/components/chat";
+
 const bowlbyOne = Bowlby_One({
   weight: "400",
   subsets: ["latin"],
@@ -34,6 +36,7 @@ const HomePage = () => {
           <Image src={`/github-logo.png`} alt="arrow" width={40} height={40} />
         </div>
       </Link>
+      <CardsChat />
     </section>
   );
 };
