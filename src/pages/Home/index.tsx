@@ -1,10 +1,10 @@
 import Image from "next/image";
-import Link from "next/link";
 
 import { Bowlby_One, Roboto } from "next/font/google";
 
-import { CardsChat } from "@/components/chat";
-
+// import { CardsChat } from "@/components/chat";
+// import ChatComponent from "@/utils/chat_component";
+import Social from "@/components/social";
 const bowlbyOne = Bowlby_One({
   weight: "400",
   subsets: ["latin"],
@@ -30,13 +30,33 @@ const HomePage = () => {
         </div>
         <Image src={`/memoji.png`} alt="monish" width={200} height={200} />
       </div>
-
-      <Link href="https://github.com/mon7792" target="_blank">
-        <div className="flex items-center justify-center p-2 border-2 border-white rounded-full cursor-pointer">
-          <Image src={`/github-logo.png`} alt="arrow" width={40} height={40} />
-        </div>
-      </Link>
-      <CardsChat />
+      <div className="flex flex-row items-center gap-2">
+        <Social
+          href="https://github.com/mon7792"
+          src="/github-logo.png"
+          alt="arrow"
+          width={40}
+          height={40}
+        />
+        <Social
+          href="https://www.linkedin.com/in/monishkadam/"
+          src="/linkedin-logo.png"
+          alt="arrow"
+          className="invert"
+          width={40}
+          height={40}
+        />
+        <Social
+          href="https://buymeacoffee.com/monishkadam"
+          src="/buy-me-a-coffee-logo.png"
+          alt="arrow"
+          className="invert"
+          width={40}
+          height={40}
+        />
+      </div>
+      {/* <CardsChat />
+      <ChatComponent /> */}
     </section>
   );
 };
